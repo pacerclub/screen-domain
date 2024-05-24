@@ -2,9 +2,192 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>480p.tech</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0051ff, #00ff8f);
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+        }
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0.5em 0;
+            font-weight: 600;
+            animation: fadeInUp 1s ease-out;
+        }
+        .hero p {
+            max-width: 600px;
+            line-height: 1.6;
+            font-size: 1.2em;
+            margin: 0.5em 0;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .arrow {
+            position: absolute;
+            bottom: 60px;
+            animation: bounce 2s infinite;
+        }
+        .arrow svg {
+            fill: white;
+            width: 35px;
+            height: 35px;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        .section-content {
+            background-color: #fff;
+            border-top: 1px solid #eaeaea;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .section-content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 1.5em;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .section-content p {
+            max-width: 600px;
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .next-section {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #eaeaea;
+        }
+        .next-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .next-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .next-button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #fff;
+            border-top: 1px solid #eaeaea;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-
+<section class="hero">
+    <h1>Welcome to 480p.tech</h1>
+    <p>Experience 480p, a resolution that became the standard for DVDs and early online videos, offering decent quality while still being easy to stream.</p>
+    <p>Discover the era when video quality began to improve noticeably, making for a more enjoyable viewing experience.</p>
+    <div class="arrow">
+        <svg viewBox="0 0 24 24">
+            <path d="M12 16.5l-7-7h14z"/>
+        </svg>
+    </div>
+</section>
+<section class="section-content">
+    <h2>Image 1</h2>
+    <div class="placeholder">Image 1</div>
+    <p>Description of Image 1. This is where you can add more details about the image, its significance, and any interesting facts or stories related to it.</p>
+</section>
+<section class="section-content">
+    <h2>Image 2</h2>
+    <div class="placeholder">Image 2</div>
+    <p>Description of Image 2. Provide more context, background information, and any relevant anecdotes to enhance the viewer's experience.</p>
+</section>
+<section class="section-content">
+    <h2>Video 1</h2>
+    <div class="placeholder">Video 1</div>
+    <p>Description of Video 1. Explain the content of the video, why it is included in the gallery, and any additional information that might be of interest.</p>
+</section>
+<section class="section-content">
+    <h2>Video 2</h2>
+    <div class="placeholder">Video 2</div>
+    <p>Description of Video 2. Offer insights, details, and any stories behind the video to engage the audience and provide a richer viewing experience.</p>
+</section>
+<div class="next-section">
+    <p>Go on to the next resolution:</p>
+    <a href="http://720p.tech" class="next-button">720p.tech</a>
+</div>
+<footer>
+    <p>&copy; 2024 480p.tech</p>
+</footer>
 </body>
 </html>
