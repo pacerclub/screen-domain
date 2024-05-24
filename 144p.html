@@ -6,74 +6,137 @@
     <title>144p.tech</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f7;
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h1 {
             color: #333;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f7;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+            font-weight: 600;
+        }
+        .hero p {
+            max-width: 600px;
+            line-height: 1.6;
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .item {
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            padding: 20px;
             width: 100%;
+            max-width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 1.5em;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .item p {
+            margin: 10px 0 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .next-section {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #eaeaea;
+        }
+        .next-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .next-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .next-button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #fff;
+            border-top: 1px solid #eaeaea;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        footer p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-<header>
-    <h1>144p.tech</h1>
-    <nav>
-        <ul>
-            <li><a href="http://144p.tech">144p</a></li>
-            <li><a href="http://240p.tech">240p</a></li>
-            <li><a href="http://360p.tech">360p</a></li>
-            <li><a href="http://480p.tech">480p</a></li>
-            <li><a href="http://720p.tech">720p</a></li>
-            <li><a href="http://1080p.tech">1080p</a></li>
-            <li><a href="http://1440p.tech">1440p</a></li>
-            <li><a href="http://2160p.tech">2160p</a></li>
-        </ul>
-    </nav>
-</header>
-<div class="container">
+<div class="hero">
     <h1>Welcome to 144p.tech</h1>
     <p>Nostalgic look at the earliest days of online video and mobile phone content, highlighting how far technology has come.</p>
     <p>Enjoy fun, low-resolution video clips and memes that can be easily shared and quickly loaded even on poor internet connections.</p>
+</div>
+<div class="content">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <div class="item">
+            <div class="placeholder">Image 1</div>
+            <p>Description of Image 1</p>
+        </div>
+        <div class="item">
+            <div class="placeholder">Image 2</div>
+            <p>Description of Image 2</p>
+        </div>
+        <div class="item">
+            <div class="placeholder">Video 1</div>
+            <p>Description of Video 1</p>
+        </div>
+        <div class="item">
+            <div class="placeholder">Video 2</div>
+            <p>Description of Video 2</p>
+        </div>
+    </div>
+</div>
+<div class="next-section">
+    <p>Go on to the next resolution:</p>
+    <a href="http://240p.tech" class="next-button">240p.tech</a>
 </div>
 <footer>
     <p>&copy; 2024 144p.tech</p>
